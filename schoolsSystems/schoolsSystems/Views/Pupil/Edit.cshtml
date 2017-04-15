@@ -1,0 +1,32 @@
+﻿@model schoolsSystems.Models.Pupil
+
+@{
+    ViewBag.Title = "Pupil";
+}
+
+@using (Html.BeginForm("Edit", "Pupil", FormMethod.Post))
+{
+
+    <div>Pupil</div>
+
+    @Html.HiddenFor(model => model.Id)
+
+    <div class="editor-label">
+        Имя @Html.EditorFor(model => model.FirsName)
+    </div>
+    <div class="editor-label">
+        Фамилия @Html.EditorFor(model => model.LastName)
+    </div>
+    <div class="editor-label">
+        Отчество @Html.EditorFor(model => model.MiddleName)
+    </div>
+    <div>
+        Школа @Html.Action("DropMenu", "School", new { schoolId = Model.SchoolId })
+    </div>
+    <div>
+        Город @Html.Action("DropMenu", "SchoolForm", new { formId= Model.SchoolFormId,SchoolId=Model.SchoolId})
+    </div>
+    <p>
+        <input type="submit" value="Сохранить" />
+    </p>
+}

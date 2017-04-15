@@ -1,0 +1,16 @@
+﻿@model IEnumerable<schoolsSystems.Models.City>
+
+@{
+    ViewBag.Title = ViewBag.Title;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div>
+    @Html.ActionLink("Добавить школу","Create","School")
+</div>
+<div>Школы</div>
+@foreach (var c in Model)
+{
+    <div>
+        @Html.ActionLink(c.name, "City", new { id = c.Id })
+    </div>
+}
