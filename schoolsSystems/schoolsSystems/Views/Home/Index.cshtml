@@ -1,6 +1,12 @@
-﻿@{
-    ViewBag.Title = "Index";
+﻿@{@{
+    ViewBag.Title = "Главная";
 }
-
-<h2>Main Page</h2>
-@Html.ActionLink("Schools","Index","School")
+    <table border="1">
+        <tr>
+            <th>Новости</th>
+            <th>@Html.ActionLink("Школы", "Index", "School")</th>
+            <th>Колледжи</th>
+            <th>Контакты</th>
+        </tr>
+    </table>
+    @Html.ActionLink("Schools", "Index", "School")
