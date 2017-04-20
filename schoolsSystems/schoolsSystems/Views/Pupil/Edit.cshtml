@@ -24,7 +24,7 @@
         Школа @Html.Action("DropMenu", "School", new { schoolId = Model.SchoolId })
     </div>
     <div>
-        Город @Html.Action("DropMenu", "SchoolForm", new { formId= Model.SchoolFormId,SchoolId=Model.SchoolId})
+        Класс @Html.Action("DropMenu", "SchoolForm", new { formId= Model.SchoolFormId,SchoolId=Model.SchoolId})
     </div>
     <p>
         <input type="submit" value="Сохранить" />
