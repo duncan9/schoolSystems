@@ -15,6 +15,17 @@ namespace schoolsSystems.Controllers
         {
             return View();
         }
-
+        public ActionResult Info()
+        {
+            return View();
+        }
+        public ActionResult News()
+        {
+            return View();
+        }
+        public ActionResult Contacts()
+        {
+            return View();
+        }
     }
 }
