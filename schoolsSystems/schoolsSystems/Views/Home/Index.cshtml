@@ -1,12 +1,12 @@
 ﻿@{
     ViewBag.Title = "Главная";
 }
-    <table border="1">
+<br>
+    <table class="menu" border="1" width="1300">
         <tr>
-            <th>Новости</th>
+            <th>@Html.ActionLink("Новости", "News")</th>
             <th>@Html.ActionLink("Школы", "Index", "School")</th>
-            <th>Колледжи</th>
-            <th>Контакты</th>
+            <th>@Html.ActionLink("О нас", "Info")</th>
+            <th>@Html.ActionLink("Конакты", "Contacts")</th>
         </tr>
     </table>
-    @Html.ActionLink("Schools", "Index", "School")

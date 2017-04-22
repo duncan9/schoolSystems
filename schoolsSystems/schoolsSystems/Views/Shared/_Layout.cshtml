@@ -8,14 +8,21 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="~/Content/bootstrap.css" rel="stylesheet" />
-    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
-    <link href="~/Content/style.css" rel="stylesheet" />
+    <link href="~/Content/Styles.css" rel="stylesheet" />
     <title>@ViewBag.Title</title>
+    <link rel="shortcut icon" href="~/Content/emblema.png" type="image/x-icon">
 </head>
 <body>
-    <div>Main Page</div>
-    <div>@RenderBody()</div>
+    <div class="header">
+      <h1 class="ah1">@Html.ActionLink("ГЛАВНАЯ","Index","Home")</h1>
+       <div class="vk">
+           <a href="https://vk.com/aleksey_tihonovich" title="vk">
+               <img src="~/Content/vk.png" />
+           </a>
+       </div>
+       
+    </div> 
+      <div>@RenderBody()</div>
     
 </body>
 </html>

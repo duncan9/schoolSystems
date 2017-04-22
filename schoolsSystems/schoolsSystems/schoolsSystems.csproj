@@ -179,8 +179,8 @@
     <Content Include="App_Data\EM_log.ldf">
       <DependentUpon>EM.mdf</DependentUpon>
     </Content>
+    <Content Include="Content\Styles.css" />
     <Content Include="Global.asax" />
-    <Content Include="Content\style.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -270,6 +270,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\SchoolForm\DropMenu.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Info.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\News.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Contacts.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
