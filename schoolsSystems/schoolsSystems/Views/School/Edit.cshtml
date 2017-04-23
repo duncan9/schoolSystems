@@ -1,15 +1,15 @@
 ﻿@model schoolsSystems.Models.School
 
 @{
-    ViewBag.Title = "Edit";
+    ViewBag.Title = "Добавить школу";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Edit</h2>
+<h2 class="ah2">Добавить школу</h2>
 
 @using (Html.BeginForm("Edit","School",FormMethod.Post)){
 
-   <div>School</div>
+   <div>Школа</div>
 
         @Html.HiddenFor(model => model.Id)
 

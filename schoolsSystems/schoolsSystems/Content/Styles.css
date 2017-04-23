@@ -1,11 +1,7 @@
 ﻿body {
-
-}
-
-a:visited {
-    color: #4c70b5;
-}
-   
+    color:#4c70b5;
+    font-family: "PT Sans", sans-serif;
+} 
 
 .inform {
     color: black;
@@ -17,14 +13,22 @@ a:visited {
 .ah2 {
     color: white;
     text-align: center;
-    border: 1px solid #395da3;
+    border: 1px solid #4c70b5;
     padding: 10px;
-    background-color: #395da3;
+    background-color: #4c70b5;
 }
 
 a:link {
     text-decoration: none;
-   color: #4c70b5;  
+    color: #4c70b5;  
+}
+
+a:visited {
+    color: #4c70b5;
+}
+  
+.menu a {
+    color: white;
 }
 
 .add {
@@ -37,7 +41,7 @@ a:link {
 }
 
 .header { 
-    padding: 10px;
+    padding: 5px;
     border-width: 1300px;
     height: 80px;
     border: 1px solid #4c70b5;
@@ -48,16 +52,63 @@ a:link {
 }
 
 .vk {
-    padding:5px;
-    margin-right: 200px;
+    padding: 1px;
+    margin-right: auto;
     float: right;
-    width: 20px;
-    height: 20px;
 }
 
-.menu {
-    border-width: 1300px;
-    border-collapse: collapse;
-    border: 2px solid #4c70b5;
- 
+a .vk {
+     width: 20px;
+}
+
+strong:hover {
+    color: #395da3;
+}
+
+.left-column {
+    padding-bottom: 10px;
+    margin-top: 2px;
+    font-size: 25px;
+    padding-top: 11px;
+    background-color: #4c70b5;
+    text-align: center;
+    float: left;
+    width: 25%;
+    min-height: 28px;
+}
+
+.center-left {
+  padding-bottom: 10px;
+    margin-top: 2px;
+    font-size: 25px;
+    padding-top: 11px;
+    background-color: #4c70b5;
+    text-align: center;
+    float: left;
+    width: 25%;
+    min-height: 28px;
+}
+
+.center-right {
+    padding-bottom: 10px;
+    margin-top: 2px;
+    font-size: 25px;
+    padding-top: 11px;
+    background-color: #4c70b5;
+    text-align: center;
+    float: left;
+    width: 25%;
+    min-height: 28px;
+}
+
+.right-column{
+    padding-bottom: 10px;
+    margin-top: 2px;
+    font-size: 25px;
+    padding-top: 11px;
+    background-color: #4c70b5;
+    text-align: center;
+    float: left;
+    width: 25%;
+    min-height: 28px;
 }
