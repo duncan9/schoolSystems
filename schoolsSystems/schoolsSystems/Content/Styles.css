@@ -112,3 +112,8 @@ strong:hover {
     width: 25%;
     min-height: 28px;
 }
+
+a:hover {
+    text-decoration:underline;
+    cursor:pointer;
+}
